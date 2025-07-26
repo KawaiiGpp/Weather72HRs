@@ -38,19 +38,23 @@ namespace Weather72HRs.Forms.Detail
             rows.Add("云量", $"{data.Clouds}%");
             rows.Add("气压", $"{data.Pressure}hPa");
 
-            if (data is RealtimeData realtime)
+            
+            if (data is HourForecastData forecast)
+            {
+                WeatherEvaluation.EvaluateWildFireScore(forecast.Temperature, 
+                    forecast.Precipitation, forecast.RelativeHumidity, forecast.ImprovedWindInfo.WindLevel,
+                    out int temp, out int prec, out int rh, out int wind);
+                int wildFireScore = temp + prec + rh + wind;
+
+                rows.Add("森林火险值", $"{wildFireScore} (T{temp}+P{prec}+R{rh}+W{wind})");
+                rows.Add("数据更新时间", $"{forecast.DataTime}");
+            }
+            else if (data is RealtimeData realtime)
             {
                 rows.Add("降雨量更新时间", $"{realtime.PrecipitationTime}");
                 rows.Add("可视距离", $"{realtime.Visibility:#,###}米");
                 rows.Add("露点", $"{realtime.DewPoint}°C");
                 rows.Add("紫外线指数", $"{realtime.UvIndex}");
-            }
-            else if (data is HourForecastData forecast)
-            {
-                int wildFireScore = WeatherEvaluation.EvaluateWildFireScore(forecast.Temperature, 
-                    forecast.Precipitation, forecast.RelativeHumidity, forecast.ImprovedWindInfo.WindLevel);
-                rows.Add("森林火险值", $"{wildFireScore}");
-                rows.Add("数据更新时间", $"{forecast.DataTime}");
             }
         }
 

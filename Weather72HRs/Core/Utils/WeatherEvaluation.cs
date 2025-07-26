@@ -38,19 +38,34 @@
 
         public static int EvaluateWildFireScore(double temp, double prec, int rh, int wind)
         {
-            int score = 0;
+            EvaluateWildFireScore(temp, prec, rh, wind,
+                out int tempScore, out int precScore, out int rhScore, out int windScore);
+            return tempScore + precScore + rhScore + windScore;
+        }
 
-            if (rh <= 30) score += 4;
-            else if (rh <= 40) score += 3;
-            else if (rh <= 50) score += 2;
+        public static void EvaluateWildFireScore(double temp, double prec, int rh, int wind,
+            out int tempScore, out int precScore, out int rhScore, out int windScore)
+        {
+            tempScore = 0;
+            precScore = 0;
+            rhScore = 0;
+            windScore = 0;
 
-            if (wind >= 5) score += 2;
-            else if (wind >= 3) score += 1;
+            if (prec > 3) return;
+            else if (prec == 0) precScore += 1;
 
-            if (prec == 0) score += 1;
-            if (temp >= 37) score += 1;
+            if (temp >= 36) tempScore += 1;
 
-            return score;
+            if (rh < 26) rhScore += 5;
+            else if (rh < 34) rhScore += 4;
+            else if (rh < 42) rhScore += 3;
+            else if (rh < 50) rhScore += 1;
+
+            if (rh < 45 && prec == 0)
+            {
+                if (wind >= 4) windScore += 2;
+                else if (wind >= 2) windScore += 1;
+            }
         }
     }
 }
