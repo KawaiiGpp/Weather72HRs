@@ -1,0 +1,33 @@
+﻿{
+    "status": 0,
+    "result": {
+        "location": {
+            "areacode": "101010100",
+            "name": "北京",
+            "country": "中国",
+            "path": "北京,北京市,北京市,中国"
+        },
+        "realtime": {
+            "text": "多云",
+            "code": "01",
+            "temp": 24.3,
+            "feels_like": 24,
+            "rh": 51,
+            "wind_class": "2级",
+            "wind_speed": 2.4,
+            "wind_dir": "北风",
+            "wind_angle": 350,
+            "prec": 0,
+            "prec_time": "2025-06-16 11:00:00",
+            "clouds": 68,
+            "vis": 30000,
+            "pressure": 992,
+            "dew": 13,
+            "uv": 6,
+            "weight": 7,
+            "brief": "舒适",
+            "detail": "冷热适宜，心情也很美丽"
+        },
+        "last_update": "2025-06-16 11:54"
+    }
+}

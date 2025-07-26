@@ -1,0 +1,144 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <OutputType>WinExe</OutputType>
+    <TargetFramework>net8.0-windows</TargetFramework>
+    <Nullable>enable</Nullable>
+    <UseWindowsForms>true</UseWindowsForms>
+    <ImplicitUsings>enable</ImplicitUsings>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <None Remove="Resources\Alerts\lightning_0.png" />
+    <None Remove="Resources\Alerts\lightning_1.png" />
+    <None Remove="Resources\Alerts\rainstorm_2.png" />
+    <None Remove="Resources\Texts\next72hrs_snapshot_demo.json" />
+    <None Remove="Resources\Texts\realtime_snapshot_demo.json" />
+    <None Remove="Resources\WeatherIcons\00.png" />
+    <None Remove="Resources\WeatherIcons\01.png" />
+    <None Remove="Resources\WeatherIcons\02.png" />
+    <None Remove="Resources\WeatherIcons\03.png" />
+    <None Remove="Resources\WeatherIcons\04.png" />
+    <None Remove="Resources\WeatherIcons\05.png" />
+    <None Remove="Resources\WeatherIcons\06.png" />
+    <None Remove="Resources\WeatherIcons\07.png" />
+    <None Remove="Resources\WeatherIcons\08.png" />
+    <None Remove="Resources\WeatherIcons\09.png" />
+    <None Remove="Resources\WeatherIcons\10.png" />
+    <None Remove="Resources\WeatherIcons\11.png" />
+    <None Remove="Resources\WeatherIcons\12.png" />
+    <None Remove="Resources\WeatherIcons\13.png" />
+    <None Remove="Resources\WeatherIcons\14.png" />
+    <None Remove="Resources\WeatherIcons\15.png" />
+    <None Remove="Resources\WeatherIcons\16.png" />
+    <None Remove="Resources\WeatherIcons\17.png" />
+    <None Remove="Resources\WeatherIcons\18.png" />
+    <None Remove="Resources\WeatherIcons\19.png" />
+    <None Remove="Resources\WeatherIcons\20.png" />
+    <None Remove="Resources\WeatherIcons\21.png" />
+    <None Remove="Resources\WeatherIcons\22.png" />
+    <None Remove="Resources\WeatherIcons\23.png" />
+    <None Remove="Resources\WeatherIcons\24.png" />
+    <None Remove="Resources\WeatherIcons\25.png" />
+    <None Remove="Resources\WeatherIcons\26.png" />
+    <None Remove="Resources\WeatherIcons\27.png" />
+    <None Remove="Resources\WeatherIcons\28.png" />
+    <None Remove="Resources\WeatherIcons\29.png" />
+    <None Remove="Resources\WeatherIcons\30.png" />
+    <None Remove="Resources\WeatherIcons\301.png" />
+    <None Remove="Resources\WeatherIcons\302.png" />
+    <None Remove="Resources\WeatherIcons\31.png" />
+    <None Remove="Resources\WeatherIcons\32.png" />
+    <None Remove="Resources\WeatherIcons\33.png" />
+    <None Remove="Resources\WeatherIcons\34.png" />
+    <None Remove="Resources\WeatherIcons\35.png" />
+    <None Remove="Resources\WeatherIcons\49.png" />
+    <None Remove="Resources\WeatherIcons\53.png" />
+    <None Remove="Resources\WeatherIcons\54.png" />
+    <None Remove="Resources\WeatherIcons\55.png" />
+    <None Remove="Resources\WeatherIcons\56.png" />
+    <None Remove="Resources\WeatherIcons\57.png" />
+    <None Remove="Resources\WeatherIcons\58.png" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <EmbeddedResource Include="Resources\Alerts\cold_0.png" />
+    <EmbeddedResource Include="Resources\Alerts\cold_1.png" />
+    <EmbeddedResource Include="Resources\Alerts\cold_2.png" />
+    <EmbeddedResource Include="Resources\Alerts\cold_3.png" />
+    <EmbeddedResource Include="Resources\Alerts\gale_0.png" />
+    <EmbeddedResource Include="Resources\Alerts\gale_1.png" />
+    <EmbeddedResource Include="Resources\Alerts\gale_2.png" />
+    <EmbeddedResource Include="Resources\Alerts\gale_3.png" />
+    <EmbeddedResource Include="Resources\Alerts\hail_1.png" />
+    <EmbeddedResource Include="Resources\Alerts\heat_0.png" />
+    <EmbeddedResource Include="Resources\Alerts\heat_1.png" />
+    <EmbeddedResource Include="Resources\Alerts\heat_2.png" />
+    <EmbeddedResource Include="Resources\Alerts\heat_3.png" />
+    <EmbeddedResource Include="Resources\Alerts\lightning_0.png" />
+    <EmbeddedResource Include="Resources\Alerts\lightning_1.png" />
+    <EmbeddedResource Include="Resources\Alerts\rainstorm_1.png" />
+    <EmbeddedResource Include="Resources\Alerts\rainstorm_2.png" />
+    <EmbeddedResource Include="Resources\Alerts\wildfire_1.png" />
+    <EmbeddedResource Include="Resources\Alerts\wildfire_2.png" />
+    <EmbeddedResource Include="Resources\Alerts\wildfire_3.png" />
+    <EmbeddedResource Include="Resources\Alerts\coldwave_0.png" />
+    <EmbeddedResource Include="Resources\Alerts\coldwave_1.png" />
+    <EmbeddedResource Include="Resources\Alerts\coldwave_2.png" />
+    <EmbeddedResource Include="Resources\Alerts\coldwave_3.png" />
+    <EmbeddedResource Include="Resources\Alerts\rainstorm_0.png" />
+    <EmbeddedResource Include="Resources\Texts\china_areacode_map.txt" />
+    <EmbeddedResource Include="Resources\Texts\next72hrs_snapshot_demo.json" />
+    <EmbeddedResource Include="Resources\Texts\realtime_snapshot_demo.json" />
+    <EmbeddedResource Include="Resources\WeatherIcons\00.png" />
+    <EmbeddedResource Include="Resources\WeatherIcons\01.png" />
+    <EmbeddedResource Include="Resources\WeatherIcons\02.png" />
+    <EmbeddedResource Include="Resources\WeatherIcons\03.png" />
+    <EmbeddedResource Include="Resources\WeatherIcons\04.png" />
+    <EmbeddedResource Include="Resources\WeatherIcons\05.png" />
+    <EmbeddedResource Include="Resources\WeatherIcons\06.png" />
+    <EmbeddedResource Include="Resources\WeatherIcons\07.png" />
+    <EmbeddedResource Include="Resources\WeatherIcons\08.png" />
+    <EmbeddedResource Include="Resources\WeatherIcons\09.png" />
+    <EmbeddedResource Include="Resources\WeatherIcons\10.png" />
+    <EmbeddedResource Include="Resources\WeatherIcons\11.png" />
+    <EmbeddedResource Include="Resources\WeatherIcons\12.png" />
+    <EmbeddedResource Include="Resources\WeatherIcons\13.png" />
+    <EmbeddedResource Include="Resources\WeatherIcons\14.png" />
+    <EmbeddedResource Include="Resources\WeatherIcons\15.png" />
+    <EmbeddedResource Include="Resources\WeatherIcons\16.png" />
+    <EmbeddedResource Include="Resources\WeatherIcons\17.png" />
+    <EmbeddedResource Include="Resources\WeatherIcons\18.png" />
+    <EmbeddedResource Include="Resources\WeatherIcons\19.png" />
+    <EmbeddedResource Include="Resources\WeatherIcons\20.png" />
+    <EmbeddedResource Include="Resources\WeatherIcons\21.png" />
+    <EmbeddedResource Include="Resources\WeatherIcons\22.png" />
+    <EmbeddedResource Include="Resources\WeatherIcons\23.png" />
+    <EmbeddedResource Include="Resources\WeatherIcons\24.png" />
+    <EmbeddedResource Include="Resources\WeatherIcons\25.png" />
+    <EmbeddedResource Include="Resources\WeatherIcons\26.png" />
+    <EmbeddedResource Include="Resources\WeatherIcons\27.png" />
+    <EmbeddedResource Include="Resources\WeatherIcons\28.png" />
+    <EmbeddedResource Include="Resources\WeatherIcons\29.png" />
+    <EmbeddedResource Include="Resources\WeatherIcons\30.png" />
+    <EmbeddedResource Include="Resources\WeatherIcons\301.png" />
+    <EmbeddedResource Include="Resources\WeatherIcons\302.png" />
+    <EmbeddedResource Include="Resources\WeatherIcons\31.png" />
+    <EmbeddedResource Include="Resources\WeatherIcons\32.png" />
+    <EmbeddedResource Include="Resources\WeatherIcons\33.png" />
+    <EmbeddedResource Include="Resources\WeatherIcons\34.png" />
+    <EmbeddedResource Include="Resources\WeatherIcons\35.png" />
+    <EmbeddedResource Include="Resources\WeatherIcons\49.png" />
+    <EmbeddedResource Include="Resources\WeatherIcons\53.png" />
+    <EmbeddedResource Include="Resources\WeatherIcons\54.png" />
+    <EmbeddedResource Include="Resources\WeatherIcons\55.png" />
+    <EmbeddedResource Include="Resources\WeatherIcons\56.png" />
+    <EmbeddedResource Include="Resources\WeatherIcons\57.png" />
+    <EmbeddedResource Include="Resources\WeatherIcons\58.png" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Newtonsoft.Json" Version="13.0.3" />
+  </ItemGroup>
+
+</Project>
