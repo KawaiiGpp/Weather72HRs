@@ -17,7 +17,7 @@ namespace Weather72HRs.Core.Alerts.Instance
                 Title = $"可能或已经出现{lightning}天气。",
                 Descriptions =
                     [
-                        $"未来3小时内，存在出现{lightning}天气的可能性"
+                        $"未来2小时内，存在出现{lightning}天气的可能性"
                     ]
             };
 
@@ -27,7 +27,7 @@ namespace Weather72HRs.Core.Alerts.Instance
                 Category = Category,
                 ImageCategory = ImageCategory,
                 Predicate = info => info
-                    .Take(3)
+                    .Take(2)
                     .Any(data => data.Code == codes),
                 Description = desc
             };

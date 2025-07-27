@@ -9,9 +9,9 @@ namespace Weather72HRs.Core.Alerts.Instance
 
         public override void Initialize()
         {
-            QuickRegister(AlertLevel.Red, "极端酷热", 39, 46);
-            QuickRegister(AlertLevel.Orange, "酷热", 37, 42);
-            QuickRegister(AlertLevel.Yellow, "炎热", 35, 39);
+            QuickRegister(AlertLevel.Red, "极端酷热", 39, 44);
+            QuickRegister(AlertLevel.Orange, "酷热", 37, 41);
+            QuickRegister(AlertLevel.Yellow, "炎热", 35, 38);
             QuickRegister(AlertLevel.Blue, "闷热", 33, 35);
         }
 

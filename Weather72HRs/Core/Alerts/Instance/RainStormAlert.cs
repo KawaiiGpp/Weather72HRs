@@ -5,16 +5,15 @@ namespace Weather72HRs.Core.Alerts.Instance
 {
     public class RainStormAlert() : Alert("暴雨", "rainstorm")
     {
-        private readonly int minimumHits = 2;
-
         public override void Initialize()
         {
-            QuickRegister(AlertLevel.Orange, 3, "特大暴雨", ["12", "25"]);
-            QuickRegister(AlertLevel.Yellow, 3, "大暴雨", ["11", "24"]);
-            QuickRegister(AlertLevel.Blue, 6, "暴雨", ["10", "23"]);
+            QuickRegister(AlertLevel.Orange, 2, "特大暴雨", ["12", "25"], 1);
+            QuickRegister(AlertLevel.Yellow, 3, "大暴雨", ["11", "24"], 1);
+            QuickRegister(AlertLevel.Blue, 6, "暴雨", ["10", "23"], 2);
         }
 
-        private void QuickRegister(AlertLevel lvl, int hours, string rain, string[] codes)
+        private void QuickRegister(AlertLevel lvl,
+            int hours, string rain, string[] codes, int minimumHits)
         {
             AlertDescription desc = new()
             {

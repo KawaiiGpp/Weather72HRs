@@ -11,7 +11,7 @@ namespace Weather72HRs.Core.Alerts.Instance
                 Title = $"可能或已经出现冰雹天气。",
                 Descriptions =
                     [
-                        $"未来3小时内，存在出现冰雹天气的可能性"
+                        $"未来2小时内，存在出现冰雹天气的可能性"
                     ]
             };
 
@@ -20,7 +20,7 @@ namespace Weather72HRs.Core.Alerts.Instance
                 Level = AlertLevel.Yellow,
                 Category = Category,
                 ImageCategory = ImageCategory,
-                Predicate = info => info.Take(3).Any(data => data.Code == "05"),
+                Predicate = info => info.Take(2).Any(data => data.Code == "05"),
                 Description = desc
             };
 
