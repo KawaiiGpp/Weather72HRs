@@ -5,17 +5,15 @@ namespace Weather72HRs.Core.Alerts.Instance
 {
     public class GaleAlert() : Alert("大风", "gale")
     {
-        private readonly int minimumHits = 5;
-
         public override void Initialize()
         {
-            QuickRegister(AlertLevel.Red, "风力可能或已增大至飓风或以上。", 12);
-            QuickRegister(AlertLevel.Orange, "风力可能或已增大至烈风或暴风。", 9);
-            QuickRegister(AlertLevel.Yellow, "风力可能或已增大至强风以上。", 6);
-            QuickRegister(AlertLevel.Blue, "风力可能增大或已明显增大。", 4);
+            QuickRegister(AlertLevel.Red, "风力可能或已增大至飓风或以上。", 12, 2);
+            QuickRegister(AlertLevel.Orange, "风力可能或已增大至烈风或暴风。", 9, 3);
+            QuickRegister(AlertLevel.Yellow, "风力可能或已增大至强风以上。", 6, 4);
+            QuickRegister(AlertLevel.Blue, "风力可能增大或已明显增大。", 4, 5);
         }
 
-        private void QuickRegister(AlertLevel lvl, string title, int level)
+        private void QuickRegister(AlertLevel lvl, string title, int level, int minimumHits)
         {
             AlertDescription desc = new()
             {
