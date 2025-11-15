@@ -118,7 +118,7 @@ namespace Weather72HRs
                 ListViewItem item = new(time, lvForecast.Items.Count);
 
                 item.SubItems.Add($"{data.Temperature}°„C");
-                item.SubItems.Add($"[{data.FeelsLikeImproved:0.#}°„C]");
+                item.SubItems.Add($"{data.FeelsLikeImproved:0.#}°„C*");
                 item.SubItems.Add($"{data.RelativeHumidity}%");
                 item.SubItems.Add(wind.WindDirection);
                 item.SubItems.Add(wind.WindLevelAsString);
