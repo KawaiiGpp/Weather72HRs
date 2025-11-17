@@ -14,10 +14,10 @@ namespace Weather72HRs.Core.Alerts.Instance
 
         public override void Initialize()
         {
-            QuickRegister(AlertLevel.Red, "非常寒冷", new(-6, -12, 0, -5), new(2, -2, 6, 2));
-            QuickRegister(AlertLevel.Orange, "寒冷", new(0, -5, 4, 0), new(7, 3, 10, 6));
-            QuickRegister(AlertLevel.Yellow, "较为寒冷", new(5, 0, 8, 4), new(12, 7, 13, 10));
-            QuickRegister(AlertLevel.Blue, "寒凉", new(10, 5, 12, 8), new(15, 12, 16, 13));
+            QuickRegister(AlertLevel.Red, "非常寒冷", new(-6, -12, 0, -8), new(2, -2, 6, 2));
+            QuickRegister(AlertLevel.Orange, "寒冷", new(0, -7, 4, -4), new(7, 3, 10, 6));
+            QuickRegister(AlertLevel.Yellow, "较为寒冷", new(5, -2, 8, 2), new(12, 7, 13, 9));
+            QuickRegister(AlertLevel.Blue, "寒凉", new(10, 4, 12, 6), new(15, 12, 16, 12));
         }
 
         private void QuickRegister(AlertLevel lvl, string cold, Standard regular, Standard warm)
